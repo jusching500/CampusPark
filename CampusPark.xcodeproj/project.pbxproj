@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		864769EA8AA8EB0C0803EDAE /* Pods_CampusPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D92E74700AECE5FE5217F7 /* Pods_CampusPark.framework */; };
+		D98DA3CB279F90A50040E0E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DA3CA279F90A50040E0E4 /* AppDelegate.swift */; };
+		D98DA3CD279F90A50040E0E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DA3CC279F90A50040E0E4 /* SceneDelegate.swift */; };
+		D98DA3CF279F90A50040E0E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DA3CE279F90A50040E0E4 /* ViewController.swift */; };
+		D98DA3D2279F90A50040E0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DA3D0279F90A50040E0E4 /* Main.storyboard */; };
+		D98DA3D4279F90A80040E0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98DA3D3279F90A80040E0E4 /* Assets.xcassets */; };
+		D98DA3D7279F90A80040E0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98DA3D5279F90A80040E0E4 /* LaunchScreen.storyboard */; };
+		D98DA3E2279F90A80040E0E4 /* CampusParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DA3E1279F90A80040E0E4 /* CampusParkTests.swift */; };
+		D98DA3ED279F90A80040E0E4 /* CampusParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DA3EC279F90A80040E0E4 /* CampusParkUITests.swift */; };
+		D98DA3FE279F96E00040E0E4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DA3FD279F96E00040E0E4 /* ResultsViewController.swift */; };
+		D9B6CCA7279FA2FE00C85B2B /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6CCA6279FA2FD00C85B2B /* GooglePlacesManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98DA3DE279F90A80040E0E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98DA3BF279F90A50040E0E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98DA3C6279F90A50040E0E4;
+			remoteInfo = CampusPark;
+		};
+		D98DA3E9279F90A80040E0E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98DA3BF279F90A50040E0E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98DA3C6279F90A50040E0E4;
+			remoteInfo = CampusPark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AF1DC153F85E67703FD6E32 /* Pods-CampusPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusPark.debug.xcconfig"; path = "Target Support Files/Pods-CampusPark/Pods-CampusPark.debug.xcconfig"; sourceTree = "<group>"; };
+		9BCAAFD78FFFAC8B636FE144 /* Pods-CampusPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusPark.release.xcconfig"; path = "Target Support Files/Pods-CampusPark/Pods-CampusPark.release.xcconfig"; sourceTree = "<group>"; };
+		A3D92E74700AECE5FE5217F7 /* Pods_CampusPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98DA3C7279F90A50040E0E4 /* CampusPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98DA3CA279F90A50040E0E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D98DA3CC279F90A50040E0E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D98DA3CE279F90A50040E0E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D98DA3D1279F90A50040E0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D98DA3D3279F90A80040E0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D98DA3D6279F90A80040E0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D98DA3D8279F90A80040E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98DA3DD279F90A80040E0E4 /* CampusParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98DA3E1279F90A80040E0E4 /* CampusParkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusParkTests.swift; sourceTree = "<group>"; };
+		D98DA3E3279F90A80040E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98DA3E8279F90A80040E0E4 /* CampusParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98DA3EC279F90A80040E0E4 /* CampusParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusParkUITests.swift; sourceTree = "<group>"; };
+		D98DA3EE279F90A80040E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98DA3FD279F96E00040E0E4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		D9B6CCA6279FA2FD00C85B2B /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98DA3C4279F90A50040E0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864769EA8AA8EB0C0803EDAE /* Pods_CampusPark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98DA3DA279F90A80040E0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98DA3E5279F90A80040E0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2EEB9335E004FAA483EC5CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D92E74700AECE5FE5217F7 /* Pods_CampusPark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98DA3BE279F90A50040E0E4 = {
+			isa = PBXGroup;
+			children = (
+				D98DA3C9279F90A50040E0E4 /* CampusPark */,
+				D98DA3E0279F90A80040E0E4 /* CampusParkTests */,
+				D98DA3EB279F90A80040E0E4 /* CampusParkUITests */,
+				D98DA3C8279F90A50040E0E4 /* Products */,
+				FEA4C2C1C40F8A839BEBBE29 /* Pods */,
+				A2EEB9335E004FAA483EC5CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D98DA3C8279F90A50040E0E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98DA3C7279F90A50040E0E4 /* CampusPark.app */,
+				D98DA3DD279F90A80040E0E4 /* CampusParkTests.xctest */,
+				D98DA3E8279F90A80040E0E4 /* CampusParkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98DA3C9279F90A50040E0E4 /* CampusPark */ = {
+			isa = PBXGroup;
+			children = (
+				D98DA3CA279F90A50040E0E4 /* AppDelegate.swift */,
+				D98DA3CC279F90A50040E0E4 /* SceneDelegate.swift */,
+				D98DA3CE279F90A50040E0E4 /* ViewController.swift */,
+				D98DA3D0279F90A50040E0E4 /* Main.storyboard */,
+				D98DA3D3279F90A80040E0E4 /* Assets.xcassets */,
+				D98DA3D5279F90A80040E0E4 /* LaunchScreen.storyboard */,
+				D98DA3D8279F90A80040E0E4 /* Info.plist */,
+				D98DA3FD279F96E00040E0E4 /* ResultsViewController.swift */,
+				D9B6CCA6279FA2FD00C85B2B /* GooglePlacesManager.swift */,
+			);
+			path = CampusPark;
+			sourceTree = "<group>";
+		};
+		D98DA3E0279F90A80040E0E4 /* CampusParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98DA3E1279F90A80040E0E4 /* CampusParkTests.swift */,
+				D98DA3E3279F90A80040E0E4 /* Info.plist */,
+			);
+			path = CampusParkTests;
+			sourceTree = "<group>";
+		};
+		D98DA3EB279F90A80040E0E4 /* CampusParkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D98DA3EC279F90A80040E0E4 /* CampusParkUITests.swift */,
+				D98DA3EE279F90A80040E0E4 /* Info.plist */,
+			);
+			path = CampusParkUITests;
+			sourceTree = "<group>";
+		};
+		FEA4C2C1C40F8A839BEBBE29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AF1DC153F85E67703FD6E32 /* Pods-CampusPark.debug.xcconfig */,
+				9BCAAFD78FFFAC8B636FE144 /* Pods-CampusPark.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98DA3C6279F90A50040E0E4 /* CampusPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98DA3F1279F90A80040E0E4 /* Build configuration list for PBXNativeTarget "CampusPark" */;
+			buildPhases = (
+				03CB575D98B5743A51C99C39 /* [CP] Check Pods Manifest.lock */,
+				D98DA3C3279F90A50040E0E4 /* Sources */,
+				D98DA3C4279F90A50040E0E4 /* Frameworks */,
+				D98DA3C5279F90A50040E0E4 /* Resources */,
+				2B3C12925E2CCC879525187C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampusPark;
+			productName = CampusPark;
+			productReference = D98DA3C7279F90A50040E0E4 /* CampusPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D98DA3DC279F90A80040E0E4 /* CampusParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98DA3F4279F90A80040E0E4 /* Build configuration list for PBXNativeTarget "CampusParkTests" */;
+			buildPhases = (
+				D98DA3D9279F90A80040E0E4 /* Sources */,
+				D98DA3DA279F90A80040E0E4 /* Frameworks */,
+				D98DA3DB279F90A80040E0E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98DA3DF279F90A80040E0E4 /* PBXTargetDependency */,
+			);
+			name = CampusParkTests;
+			productName = CampusParkTests;
+			productReference = D98DA3DD279F90A80040E0E4 /* CampusParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D98DA3E7279F90A80040E0E4 /* CampusParkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98DA3F7279F90A80040E0E4 /* Build configuration list for PBXNativeTarget "CampusParkUITests" */;
+			buildPhases = (
+				D98DA3E4279F90A80040E0E4 /* Sources */,
+				D98DA3E5279F90A80040E0E4 /* Frameworks */,
+				D98DA3E6279F90A80040E0E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98DA3EA279F90A80040E0E4 /* PBXTargetDependency */,
+			);
+			name = CampusParkUITests;
+			productName = CampusParkUITests;
+			productReference = D98DA3E8279F90A80040E0E4 /* CampusParkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98DA3BF279F90A50040E0E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D98DA3C6279F90A50040E0E4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D98DA3DC279F90A80040E0E4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D98DA3C6279F90A50040E0E4;
+					};
+					D98DA3E7279F90A80040E0E4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D98DA3C6279F90A50040E0E4;
+					};
+				};
+			};
+			buildConfigurationList = D98DA3C2279F90A50040E0E4 /* Build configuration list for PBXProject "CampusPark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98DA3BE279F90A50040E0E4;
+			productRefGroup = D98DA3C8279F90A50040E0E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98DA3C6279F90A50040E0E4 /* CampusPark */,
+				D98DA3DC279F90A80040E0E4 /* CampusParkTests */,
+				D98DA3E7279F90A80040E0E4 /* CampusParkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98DA3C5279F90A50040E0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98DA3D7279F90A80040E0E4 /* LaunchScreen.storyboard in Resources */,
+				D98DA3D4279F90A80040E0E4 /* Assets.xcassets in Resources */,
+				D98DA3D2279F90A50040E0E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98DA3DB279F90A80040E0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98DA3E6279F90A80040E0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03CB575D98B5743A51C99C39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CampusPark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B3C12925E2CCC879525187C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98DA3C3279F90A50040E0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98DA3CF279F90A50040E0E4 /* ViewController.swift in Sources */,
+				D98DA3CB279F90A50040E0E4 /* AppDelegate.swift in Sources */,
+				D98DA3CD279F90A50040E0E4 /* SceneDelegate.swift in Sources */,
+				D98DA3FE279F96E00040E0E4 /* ResultsViewController.swift in Sources */,
+				D9B6CCA7279FA2FE00C85B2B /* GooglePlacesManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98DA3D9279F90A80040E0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98DA3E2279F90A80040E0E4 /* CampusParkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98DA3E4279F90A80040E0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98DA3ED279F90A80040E0E4 /* CampusParkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98DA3DF279F90A80040E0E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98DA3C6279F90A50040E0E4 /* CampusPark */;
+			targetProxy = D98DA3DE279F90A80040E0E4 /* PBXContainerItemProxy */;
+		};
+		D98DA3EA279F90A80040E0E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98DA3C6279F90A50040E0E4 /* CampusPark */;
+			targetProxy = D98DA3E9279F90A80040E0E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D98DA3D0279F90A50040E0E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98DA3D1279F90A50040E0E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D98DA3D5279F90A80040E0E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98DA3D6279F90A80040E0E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98DA3EF279F90A80040E0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D98DA3F0279F90A80040E0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D98DA3F2279F90A80040E0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF1DC153F85E67703FD6E32 /* Pods-CampusPark.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CampusPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CampusPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D98DA3F3279F90A80040E0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BCAAFD78FFFAC8B636FE144 /* Pods-CampusPark.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CampusPark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CampusPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D98DA3F5279F90A80040E0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CampusParkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CampusParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusPark.app/CampusPark";
+			};
+			name = Debug;
+		};
+		D98DA3F6279F90A80040E0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CampusParkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CampusParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusPark.app/CampusPark";
+			};
+			name = Release;
+		};
+		D98DA3F8279F90A80040E0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CampusParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CampusParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CampusPark;
+			};
+			name = Debug;
+		};
+		D98DA3F9279F90A80040E0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CampusParkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.CampusParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CampusPark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98DA3C2279F90A50040E0E4 /* Build configuration list for PBXProject "CampusPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98DA3EF279F90A80040E0E4 /* Debug */,
+				D98DA3F0279F90A80040E0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98DA3F1279F90A80040E0E4 /* Build configuration list for PBXNativeTarget "CampusPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98DA3F2279F90A80040E0E4 /* Debug */,
+				D98DA3F3279F90A80040E0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98DA3F4279F90A80040E0E4 /* Build configuration list for PBXNativeTarget "CampusParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98DA3F5279F90A80040E0E4 /* Debug */,
+				D98DA3F6279F90A80040E0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98DA3F7279F90A80040E0E4 /* Build configuration list for PBXNativeTarget "CampusParkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98DA3F8279F90A80040E0E4 /* Debug */,
+				D98DA3F9279F90A80040E0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98DA3BF279F90A50040E0E4 /* Project object */;
+}
