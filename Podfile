@@ -6,5 +6,6 @@ target 'CampusPark' do
   use_frameworks!
 	
 	pod 'GooglePlaces', '4.2.0'
+	pod 'SideMenu'
 
 end

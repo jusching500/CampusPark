@@ -170,6 +170,7 @@
 				D98DA3C4279F90A50040E0E4 /* Frameworks */,
 				D98DA3C5279F90A50040E0E4 /* Resources */,
 				2B3C12925E2CCC879525187C /* [CP] Copy Pods Resources */,
+				974CE4759D46B974BEDAFE46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +324,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		974CE4759D46B974BEDAFE46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CampusPark/Pods-CampusPark-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
