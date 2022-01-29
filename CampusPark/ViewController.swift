@@ -8,40 +8,84 @@ import SideMenu
 import UIKit
 import MapKit
 
-class ViewController: UIViewController,UISearchResultsUpdating {
+class ViewController: UIViewController,UISearchResultsUpdating,MenuControllerDelegate {
     
-    var menu: SideMenuNavigationController?
+    private let settingsController = SettingsViewController()
+    private let profileController = ProfileViewController()
+    
+    private var sideMenu: SideMenuNavigationController?
     
     let mapView = MKMapView()
     
     let searchVC = UISearchController(searchResultsController: ResultsViewController())
         
     override func viewDidLoad() { //lol idk what this does
+        super.viewDidLoad()
+        let menu = MenuController(with: ["Map","Profile","Settings"])
+        sideMenu = SideMenuNavigationController(rootViewController: menu)
         //sidemenu stuff
-        menu = SideMenuNavigationController(rootViewController: MenuListController())
+        menu.delegate = self
+        sideMenu?.leftSide = true
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view) //needed to make//might not need one of these two lines
+
         //|^
         
-        super.viewDidLoad()
         title = "Maps"
         view.addSubview(mapView)
         searchVC.searchBar.backgroundColor = .secondarySystemBackground //searchbar color
         searchVC.searchResultsUpdater = self
         navigationItem.searchController = searchVC
         // Do any additional setup after loading the view.
+        addchildControllers()
     }
     //menu button
-    @IBAction func didTapMenu(){
-        present(menu!,animated: true)
-        menu?.setNavigationBarHidden(true, animated: false)
-        menu?.leftSide = true //needed to make it left
+    //adding the pages foor the sidemneu
+    private func addchildControllers(){
+        addChild(self.settingsController)
+        addChild(self.profileController)
+        view.addSubview(settingsController.view)
+        view.addSubview(profileController.view)
+        settingsController.view.frame = view.bounds
+        profileController.view.frame = view.bounds
         
-        SideMenuManager.default.leftMenuNavigationController = menu //might not need one of these two lines
-        SideMenuManager.default.addPanGestureToPresent(toView: self.view) //needed to make it left
+        settingsController.didMove(toParent: self)
+        profileController.didMove(toParent: self)
+        
+        settingsController.view.isHidden = true
+        profileController.view.isHidden = true
+
+    }
+    
+    @IBAction func didTapMenu(){
+        present(sideMenu!,animated: true)
+
+    }
+    
+    func didSelectMenuItem(named: String) {
+        sideMenu?.dismiss(animated: true, completion: { [weak self] in
+            if named == "Map"{
+                self?.settingsController.view.isHidden = true
+                self?.profileController.view.isHidden = true
+                self?.view.backgroundColor = .white
+            }
+            else if named == "Profile"{
+                self?.settingsController.view.isHidtden = true
+                self?.profileController.view.isHidden = false
+                self?.view.backgroundColor = .red
+            }
+            else if named == "Settings"{
+                self?.settingsController.view.isHidden = true
+                self?.profileController.view.isHidden = false
+                self?.view.backgroundColor = .green
+            }
+        })
+        
     }
     
     override func viewDidLayoutSubviews() { //lauout
         super.viewDidLayoutSubviews() 
-        mapView.frame = view.bounds //how big the map screen is 
+        mapView.frame = CGRect(x:0,y:view.safeAreaInsets.top,width: view.frame.size.width, height: view.frame.size.height - view.safeAreaInsets.top) //how big the map screen is
     }
 
     func updateSearchResults(for searchController: UISearchController) { // this connects to googleplacesmanager
@@ -86,31 +130,6 @@ extension ViewController: ResultsViewControllerDelegate{
         mapView.setRegion(MKCoordinateRegion(center: coordinates,span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), animated: true) //how far to zoom
 
 //Add pins
-    }
-}
-
-class MenuListController: UITableViewController {
-    var items = ["First", "Second", "Third"]
-    let darkColor = UIColor(red: 0, green: 0, blue: 255, alpha: 1)
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.backgroundColor = darkColor
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-    }
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return items.count
-    }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = items[indexPath.row]
-        cell.textLabel?.textColor = .white
-        cell.backgroundColor = darkColor
-        return cell
-        
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

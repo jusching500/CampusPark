@@ -28,7 +28,7 @@ class ResultsViewController: UIViewController,UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
-        view.backgroundColor = .clear
+        view.backgroundColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
                 // Do any additional setup after loading the view.
@@ -38,6 +38,7 @@ class ResultsViewController: UIViewController,UITableViewDelegate, UITableViewDa
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
     }
+    
     public func update(with places: [Place]){
         self.tableView.isHidden = false
         self.places = places //self.places is arrray of
